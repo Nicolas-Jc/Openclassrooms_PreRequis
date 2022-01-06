@@ -31,17 +31,20 @@ body {
     /*color: #565656;*/
 }
 
+/* --------- MA PHOTO ---------------------------------*/
 img {
     float: right;
     /*border: 1px solid black;
     box-shadow: 2px 2px 2px black;*/
 }
 
+/* --------- MON NOM PRENOM ---------------------------------*/
 h1 {
     font-size: 1.7em;
     margin-bottom: 3px;
 }
 
+/* --------- TITRES DE SECTIONS ---------------------------------*/
 h2 {
     border-bottom: 3px blue solid;
     background-color: #CCC;
@@ -51,12 +54,14 @@ h2 {
     margin-top: 5px;
 }
 
+/* --------- TITRE SOCIETE AXA ---------------------------------*/
 h3 {
     box-shadow: 6px 6px 6px black;
     font-size: 1em;
     height: 32px;
 }
 
+/* --------- TITRES DIRECTIONS AXA ---------------------------------*/
 h4 {
     color: #792F11;
     font-size: 0.9em;
@@ -67,32 +72,28 @@ p {
     font-size: 0.9em;
 }
 
-/*strong {
-    color: #792F11;
-}*/
-
+/* --------- BALISE SEMANTIQUE ECOLE ---------------------------------*/
 em {
     font-size: 0.8em;
 }
 
-span {
+/*span {
     background-color: #0000ff;
     color: #F8F8F8;
     padding: 1px 5px 1px 5px;
-}
-
+}*/
 
 /* --------- ADAPTATION LISTES A PUCES  ------------------------------------------------------------------------*/
 ul {
      list-style-type: none;
      padding-left: 0;
 }
-/* ----------------------------------------------------------------------------------------------------------------*/
 
 li {
     margin-bottom: 7px;
 }
 
+/* --------- FORMATAGE DES 3 SECTIONS ---------------------------------*/
 section {
     display: inline-block;
     vertical-align: top;
@@ -100,9 +101,11 @@ section {
     margin-right: 2%;
 }
 
+/* ------------------------------------------------------------------------------------------*/
 /* --------- IDENTIFIANTS -------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------*/
 
-/* --------- BOUTONS (Hyperlien) LINKEDIN ----------------------*/
+/* --------- BOUTON (Hyperlien) LINKEDIN ----------------------*/
 #linkedin {
     margin-top: 5px;
     width: 200px;
@@ -125,6 +128,7 @@ section {
     margin-bottom: 5px;
 }
 
+/* --------- MISE EN FORME LISERE ET CONTENU ----------------------*/
 #lisere, #contenu {
     display: inline-block;
     vertical-align: top;
@@ -142,6 +146,7 @@ section {
     width: 85%;
 }
 
+/* --------- MISE EN FORME DES SECTIONS ----------------------*/
 #section1 p {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -160,11 +165,14 @@ section {
     font-size: 0.9em;
 }
 
+/* --------- MISE EN FORME BALISE ECOLE (FORMATION) ----------------------*/
 #ecole {
     margin-top: -14px;
 }
 
-/* --------- CLASSES --------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+/* ----------------------- CLASSES ------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
 .entete {
     color: blue;
     text-align: center;
@@ -177,11 +185,13 @@ section {
     margin-right: 20px;
 }
 
+/* --------- LOGO AXA SECTION A 1 EXPERIENCES ----------------------*/
 .logoflottant {
     float: left;
     margin-right: 5px;
 }
 
+/* --------- MISE EN FORME DES BALISES POSTES-FONCTIONS ----------------------*/
 .fonction {
     font-size: 0.9em;
     margin-left: 10px;
@@ -189,6 +199,12 @@ section {
 
 
 /* --------- REGLES MEDIA QUERIES --------------------------------------------------------------*/
+/* Adaptation de l'affichage lors de la bascule sur format tabllette - smartphone ***************/
+/* 1. Mise en disposition verticale des 3 sections */
+/* 2. Réduction de la taille du Logo Axa */
+/* 3. Suppression du lisere gris en bordure gauche */
+/* 4. Définition d'une largeur "Auto" sur le conteneur des 3 sections */
+/* ---------------------------------------------------------------------------------------------*/
 @media all and (max-width: 1024px)
 {
     section
